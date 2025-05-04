@@ -1,0 +1,34 @@
+{
+  "name": "nro-launcher",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "author": "Arriety",
+  "license": "ISC",
+  "description": "NRO Launcher",
+  "devDependencies": {
+    "electron": "^36.1.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.arriety.nrolauncher",
+    "productName": "NRO Launcher",
+    "files": [
+      "src/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "buildResources": "src/assets"
+    },
+    "win": {
+      "icon": "src/assets/icon.ico",
+      "target": [
+        "nsis"
+      ]
+    }
+  }
+}

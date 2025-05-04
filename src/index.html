@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>NRO Launcher</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <!-- <h1>NRO Launcher</h1> -->
+    <!-- <button onclick="downloadGame()">Tải Game</button> -->
+    <!-- <button onclick="launchGame()">Chơi Ngay</button> -->
+    <!-- <progress id="progressBar" value="0" max="100"></progress> -->
+
+    <div class="header-bar"></div>
+
+    <div class="window-buttons">
+        <button class="window-button" id="menuBtn">⋮</button>
+
+        <div class="menu-popup" id="menuPopup">
+            <div class="menu-item" id="settingsBtn">
+                <span>⚙️</span> Cài đặt
+            </div>
+            <div class="menu-item" id="feedbackBtn">
+                <span>💬</span> Báo lỗi và Phản hồi
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <button id="minimize" class="window-button">–</button>
+        <button id="close" class="window-button">×</button>
+    </div>
+
+    <div class="sidebar">
+        <div class="logo-section">
+            <img src="./assets/logo.png" class="logo" alt="Logo" />
+            <span class="beta-tag">BETA</span>
+        </div>
+        <div class="nav-buttons">
+            <button class="nav-btn active">
+                <img src="./assets/list-game.png" alt="List Game" class="icon-img">
+                <span class="tooltip">Danh sách game</span>
+            </button>
+
+            <button class="nav-btn">
+                <img src="./assets/user.png" alt="User Icon" class="icon-img">
+                <span class="tooltip">Tài khoản</span>
+            </button>
+        </div>
+    </div>
+
+    <div id="settingsPanel" style="display: none;" class="settings-panel">
+        <div class="settings-header">
+            <h2>Cài đặt</h2>
+            <button onclick="document.getElementById('settingsPanel').style.display = 'none'">✖</button>
+        </div>
+        <div class="settings-body">
+            <p>Ngôn ngữ, khởi động cùng máy, đóng app,...</p>
+        </div>
+    </div>
+
+    <script src="./renderer.js"></script>
+</body>
+
+
+</html>
