@@ -1,8 +1,6 @@
-const fs = require('fs');
-const https = require('https');
-const path = require('path');
-const { exec } = require('child_process');
 
+const accountBtn = document.getElementById("accountBtn");
+const sidebarLogin = document.getElementById("sidebarLogin");
 
 const menuBtn = document.getElementById('menuBtn');
 const menuPopup = document.getElementById('menuPopup');
@@ -37,3 +35,7 @@ settingsBtn.addEventListener('click', () => {
 feedbackBtn.addEventListener('click', () => {
   alert('Hiển thị form báo lỗi hoặc mở URL gửi phản hồi.');
 });
+
+accountBtn.onclick = () => {
+  sidebarLogin.classList.toggle("expanded");
+};

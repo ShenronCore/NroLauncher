@@ -35,21 +35,31 @@
         <button id="close" class="window-button">×</button>
     </div>
 
-    <div class="sidebar">
+    <div class="sidebar" id="sidebar">
         <div class="logo-section">
             <img src="./assets/logo.png" class="logo" alt="Logo" />
             <span class="beta-tag">BETA</span>
         </div>
+
         <div class="nav-buttons">
             <button class="nav-btn active">
                 <img src="./assets/list-game.png" alt="List Game" class="icon-img">
                 <span class="tooltip">Danh sách game</span>
             </button>
 
-            <button class="nav-btn">
+            <button class="nav-btn" id="accountBtn">
                 <img src="./assets/user.png" alt="User Icon" class="icon-img">
                 <span class="tooltip">Tài khoản</span>
             </button>
+        </div>
+    </div>
+
+    <div class="sidebar-login" id="sidebarLogin">
+        <div class="login-panel">
+            <h3>Đăng nhập</h3>
+            <input type="text" id="loginUsername" placeholder="Tên tài khoản" />
+            <input type="password" id="loginPassword" placeholder="Mật khẩu" />
+            <button onclick="submitLogin()">Đăng nhập</button>
         </div>
     </div>
 
