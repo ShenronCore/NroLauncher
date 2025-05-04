@@ -1,3 +1,3 @@
 # Nro Launcher - Electron JS
 
-![Demo](assets/demo.png)
+![Demo](src/assets/demo.png)
