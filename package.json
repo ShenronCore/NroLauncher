@@ -4,6 +4,7 @@
   "main": "src/main.js",
   "scripts": {
     "start": "electron .",
+    "dist": "electron-builder",
     "build": "electron-builder"
   },
   "keywords": [],
@@ -28,6 +29,17 @@
       "icon": "src/assets/icon.ico",
       "target": [
         "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "perMachine": true,
+      "include": "src/assets/installer.nsh",
+      "multiLanguageInstaller": true,
+      "installerLanguages": [
+        "en_US",
+        "vi_VN"
       ]
     }
   }
